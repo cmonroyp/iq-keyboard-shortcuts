@@ -1,0 +1,16 @@
+<iq-keyboard-shortcuts
+        [shortcuts]="shortcuts"
+        [disabled]="disabledShortcuts"
+></iq-keyboard-shortcuts>
+<ng-keyboard-shortcut [key]="'shift + k'" (fire)="onShiftPlusKClicked($event)"></ng-keyboard-shortcut>
+<table>
+    <tr
+            *ngFor="let person of persons; let i = index"
+            [ngClass]="{ 'selected': i == selectedIndex }"
+    >
+        <td>{{ i }}</td>
+        <td>{{ person.name }}</td>
+    </tr>
+</table>
+<button (click)="disable()">Enable/Disable Shortcuts</button>
+<p>Disabled : {{ disabledShortcuts }}</p>

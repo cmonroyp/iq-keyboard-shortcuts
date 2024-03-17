@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "projects": {
+    "iq-keyboard-shortcuts": {
+      "root": "libs/iq-keyboard-shortcuts",
+      "sourceRoot": "libs/iq-keyboard-shortcuts/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/iq-keyboard-shortcuts/tsconfig.lib.json",
+            "project": "libs/iq-keyboard-shortcuts/ng-package.json"
+          }
+        }
+      },
+      "playground": "apps/playground",
+      "playground-e2e": "apps/playground-e2e"
+    }
+  }
+}

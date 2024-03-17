@@ -1,0 +1,6 @@
+{
+  "name": "iq-keyboard-shortcuts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "playground": "apps/playground",
+  "playground-e2e": "apps/playground-e2e"
+}

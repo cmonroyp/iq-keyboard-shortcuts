@@ -1,0 +1,34 @@
+<iq-keyboard-shortcuts [disabled]="directiveDisabled" [shortcuts]="shortcuts"></iq-keyboard-shortcuts>
+<div class="wrapper">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Demo page for Keyboard shortcut service</mat-card-title>
+      <mat-card-subtitle>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Only on focus" #input>
+      </mat-form-field>
+      <div>
+        Content Editable div
+      <div contenteditable="true" class="content-editable"></div>
+      </div>
+      <iq-keyboard-shortcuts-nested></iq-keyboard-shortcuts-nested>
+      <button (click)="disableAllShortcuts()">Disable shortcuts</button>
+      <input [ngKeyboardShortcuts]="directiveShortcuts" [disabled]="directiveDisabled"/>
+      <button (click)="handleClick($event)">disable directive</button>
+      <button (click)="toggleSecondShortcuts()">Toggle Second shortcuts</button>
+      <button (click)="justForFun()">Just for Fun to make sure clicks works</button>
+      <div *ngIf="showSecondShortcuts">
+        <iq-keyboard-shortcuts [shortcuts]="secondShortcuts"></iq-keyboard-shortcuts>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="testClick($event)">Testing clicking bug</button>
+    </mat-card-actions>
+    <textarea></textarea>
+  </mat-card>
+</div>
+
+

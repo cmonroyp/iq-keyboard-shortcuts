@@ -1,0 +1,29 @@
+{
+  "name": "iq-keyboard-shortcuts",
+  "version": "1.0.0",
+  "description": "Dead Simple Keyboard Shortcuts Management for Angular 2+",
+  "keywords": [
+    "angular",
+    "keyboard",
+    "shortcuts",
+    "ng",
+    "keyboard-shortcuts",
+    "rxjs"
+  ],
+  "license": "MIT",
+  "author": "Omri Katz <omrikatz12@gmail.com> (https://github.com/omridevk)",
+  "homepage": "https://omridevk.github.io/iq-keyboard-shortcuts",
+  "repository": "github.com/omridevk/iq-keyboard-shortcuts",
+  "bugs": "https://github.com/omridevk/iq-keyboard-shortcuts/issues",
+  "peerDependencies": {
+    "@angular/animations": ">=9.0.0",
+    "@angular/common": ">=9.0.0",
+    "@angular/compiler": ">=9.0.0",
+    "@angular/core": ">=9.0.0",
+    "@angular/platform-browser": ">=9.0.0",
+    "rxjs": ">=6.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
