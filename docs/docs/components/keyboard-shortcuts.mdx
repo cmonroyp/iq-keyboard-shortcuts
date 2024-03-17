@@ -1,6 +1,6 @@
 ---
-id: iq-keyboard-shortcuts
-title: iq-keyboard-shortcuts
+id: ng-keyboard-shortcuts
+title: ng-keyboard-shortcuts
 sidebar_position: 1
 ---
 Component that can be used across the app to bind to various shortcuts
@@ -20,11 +20,11 @@ Component that can be used across the app to bind to various shortcuts
 ```typescript
 
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "iq-keyboard-shortcuts";
+import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "ng-keyboard-shortcuts";
 
 @Component({
     selector: 'demo-component',
-    template: "<iq-keyboard-shortcuts [shortcuts]="shortcuts"></iq-keyboard-shortcuts>"
+    template: "<ng-keyboard-shortcuts [shortcuts]="shortcuts"></ng-keyboard-shortcuts>"
 })
 export class DemoComponent implements AfterViewInit {
 

@@ -1,8 +1,8 @@
-import { Component, OnInit, AfterViewInit, HostListener } from "@angular/core";
-import { ShortcutInput } from "iq-keyboard-shortcuts";
+import {Component, OnInit, AfterViewInit, HostListener} from '@angular/core';
+import {ShortcutInput} from 'ng-keyboard-shortcuts';
 
 @Component({
-    selector: "iq-keyboard-shortcuts-nested",
+    selector: "ng-keyboard-shortcuts-nested",
     templateUrl: "./nested.component.html",
     styleUrls: ["./nested.component.scss"]
 })
@@ -21,14 +21,14 @@ export class NestedComponent implements OnInit, AfterViewInit {
         console.log(event);
     }
 
-    @HostListener("shortcut.t k", ["$event"])
+    @HostListener("shortcut.t k", ['$event'])
     onShortcut(event) {
         console.log(event);
     }
 
     @HostListener("shortcut.shift + y.prevent")
     onShift() {
-        console.log("ty");
+        console.log("ty")
     }
 
     ngAfterViewInit() {

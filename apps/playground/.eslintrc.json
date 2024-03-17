@@ -27,7 +27,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "iq-keyboard-shortcuts",
+            "prefix": "ng-keyboard-shortcuts",
             "style": "kebab-case"
           }
         ]

@@ -1,13 +1,13 @@
-import { Directive, ElementRef, Input, OnChanges, OnDestroy, SimpleChanges } from "@angular/core";
-import { AllowIn, Shortcut } from "./ng-keyboard-shortcuts.interfaces";
-import { KeyboardShortcutsService } from "./ng-keyboard-shortcuts.service";
+import {Directive, ElementRef, Input, OnChanges, OnDestroy, SimpleChanges} from '@angular/core';
+import {AllowIn, Shortcut} from './ng-keyboard-shortcuts.interfaces';
+import {KeyboardShortcutsService} from './ng-keyboard-shortcuts.service';
 
 /**
  * A directive to be used with "focusable" elements, like:
  * textarea, input, select.
  */
 @Directive({
-    selector: "[ngKeyboardShortcuts]"
+    selector: '[ngKeyboardShortcuts]'
 })
 export class KeyboardShortcutsDirective implements OnDestroy, OnChanges {
     /**
@@ -40,6 +40,7 @@ export class KeyboardShortcutsDirective implements OnDestroy, OnChanges {
                 this.clearIds = this.keyboard.add(this.transformInput(this.ngKeyboardShortcuts));
             }
         });
+
     }
 
     /**
@@ -47,7 +48,8 @@ export class KeyboardShortcutsDirective implements OnDestroy, OnChanges {
      * @param {KeyboardShortcutsService} keyboard
      * @param {ElementRef} el
      */
-    constructor(private keyboard: KeyboardShortcutsService, private el: ElementRef) {}
+    constructor(private keyboard: KeyboardShortcutsService, private el: ElementRef) {
+    }
 
     /**
      * @ignore
@@ -55,7 +57,7 @@ export class KeyboardShortcutsDirective implements OnDestroy, OnChanges {
      * @returns {any}
      */
     private transformInput(shortcuts: Shortcut[]) {
-        return shortcuts.map((shortcut) => ({
+        return shortcuts.map(shortcut => ({
             ...shortcut,
             target: this.el.nativeElement,
             allowIn: [AllowIn.Select, AllowIn.Input, AllowIn.Textarea]
@@ -77,7 +79,7 @@ export class KeyboardShortcutsDirective implements OnDestroy, OnChanges {
      * @param {SimpleChanges} changes
      */
     ngOnChanges(changes: SimpleChanges) {
-        const { ngKeyboardShortcuts } = changes;
+        const {ngKeyboardShortcuts} = changes;
         if (this.clearIds) {
             this.keyboard.remove(this.clearIds);
         }

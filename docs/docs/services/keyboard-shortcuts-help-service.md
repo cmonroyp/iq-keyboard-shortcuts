@@ -4,7 +4,7 @@ title: Keyboard Shortcuts help service
 sidebar_position: 1
 ---
 
-Singleton service that can be used to render a custom help screen. (used to build the [Built in help component](#iq-keyboard-shortcuts-help))  
+Singleton service that can be used to render a custom help screen. (used to build the [Built in help component](#ng-keyboard-shortcuts-help))  
 Provides access to all registered shortcuts in the app using Observable that updates on shortcuts changes.  
 Since shortcuts can be added or removed during the lifecycle of the app, an observable data structure needed to be used.
 

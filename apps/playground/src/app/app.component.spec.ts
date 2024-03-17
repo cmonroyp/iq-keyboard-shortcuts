@@ -21,7 +21,7 @@ describe("AppComponent", () => {
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;
         expect(compiled.querySelector("h1").textContent).toContain(
-            "Welcome to iq-keyboard-shortcuts-app!"
+            "Welcome to ng-keyboard-shortcuts-app!"
         );
     }));
 });

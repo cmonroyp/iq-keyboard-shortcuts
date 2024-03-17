@@ -85,7 +85,8 @@ export class KeyboardShortcutsService implements OnDestroy {
     private static readonly TIMEOUT_SEQUENCE = 1000;
 
     private _shortcutsSub = new BehaviorSubject<ParsedShortcut[]>([]);
-    public shortcuts$ = this._shortcutsSub.pipe(filter((shortcuts) => !!shortcuts.length));
+    public shortcuts$ = this._shortcutsSub
+        .pipe(filter((shortcuts) => !!shortcuts.length));
 
     private _ignored = [AllowIn.Input, AllowIn.Textarea, AllowIn.Select, AllowIn.ContentEditable];
 
@@ -150,7 +151,7 @@ export class KeyboardShortcutsService implements OnDestroy {
      * https://bugzilla.mozilla.org/show_bug.cgi?id=1487102
      * and my repo:
      *
-     * https://github.com/omridevk/iq-keyboard-shortcuts/issues/35
+     * https://github.com/omridevk/ng-keyboard-shortcuts/issues/35
      */
     private ignore$ = this.pressed$.pipe(
         filter((e) => e.event.defaultPrevented),

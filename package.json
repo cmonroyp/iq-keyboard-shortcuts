@@ -1,5 +1,5 @@
 {
-  "name": "iq-keyboard-shortcuts",
+  "name": "ng-keyboard-shortcuts",
   "version": "14.0.0",
   "license": "MIT",
   "scripts": {
@@ -7,10 +7,10 @@
     "postinstall": "node ./decorate-angular-cli.js",
     "start": "nx serve",
     "build": "nx build",
-    "build:lib": "nx build iq-keyboard-shortcuts",
+    "build:lib": "nx build ng-keyboard-shortcuts",
     "test": "nx test",
     "docs": "cd ./docs && npm run start",
-    "publish": "nx build iq-keyboard-shortcuts && npm publish dist/libs/iq-keyboard-shortcuts"
+    "publish": "nx build ng-keyboard-shortcuts && npm publish dist/libs/ng-keyboard-shortcuts"
   },
   "private": true,
   "dependencies": {

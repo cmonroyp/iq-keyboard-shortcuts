@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from "@angular/core";
-import { ShortcutInput } from "iq-keyboard-shortcuts";
-import { KeyboardShortcutsComponent } from "iq-keyboard-shortcuts";
+import { ShortcutInput } from "ng-keyboard-shortcuts";
+import { KeyboardShortcutsComponent } from "ng-keyboard-shortcuts";
 import { Subscription } from "rxjs";
 
 @Component({

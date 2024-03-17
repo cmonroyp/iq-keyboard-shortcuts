@@ -19,7 +19,7 @@ The shortcut then will only be active while the element is in __focus__.
 
 ```typescript  
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";  
-import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "iq-keyboard-shortcuts";  
+import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "ng-keyboard-shortcuts";  
   
 @Component({  
     selector: 'demo-component',  

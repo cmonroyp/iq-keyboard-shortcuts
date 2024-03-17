@@ -1,25 +1,25 @@
-# iq-keyboard-shortcuts
+# ng-keyboard-shortcuts
 <p>
-      <a href="https://badge.fury.io/js/iq-keyboard-shortcuts" alt="npm version" target="_blank">
-        <img src="https://badge.fury.io/js/iq-keyboard-shortcuts.svg" />
+      <a href="https://badge.fury.io/js/ng-keyboard-shortcuts" alt="npm version" target="_blank">
+        <img src="https://badge.fury.io/js/ng-keyboard-shortcuts.svg" />
       </a>
-      <a href="https://badge.fury.io/js/iq-keyboard-shortcuts" alt="npm downloads per month" target="_blank">
-        <img src="https://img.shields.io/npm/dw/iq-keyboard-shortcuts" />
+      <a href="https://badge.fury.io/js/ng-keyboard-shortcuts" alt="npm downloads per month" target="_blank">
+        <img src="https://img.shields.io/npm/dw/ng-keyboard-shortcuts" />
       </a>
-      <a href="https://bundlephobia.com/result?p=iq-keyboard-shortcuts" alt="Bundle size" target="_blank" >
-        <img src="https://img.shields.io/bundlephobia/minzip/iq-keyboard-shortcuts" />
+      <a href="https://bundlephobia.com/result?p=ng-keyboard-shortcuts" alt="Bundle size" target="_blank" >
+        <img src="https://img.shields.io/bundlephobia/minzip/ng-keyboard-shortcuts" />
       </a>
-      <a href="https://gitter.im/iq-keyboard-shortcuts/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" alt="Join the chat at our community" target="_blank">
-        <img src="https://badges.gitter.im/iq-keyboard-shortcuts/community.svg" />
+      <a href="https://gitter.im/ng-keyboard-shortcuts/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" alt="Join the chat at our community" target="_blank">
+        <img src="https://badges.gitter.im/ng-keyboard-shortcuts/community.svg" />
       </a>
-       <a href="https://img.shields.io/npm/l/iq-keyboard-shortcuts" target="_blank" alt="MIT License">
-        <img src="https://img.shields.io/npm/l/iq-keyboard-shortcuts" />
+       <a href="https://img.shields.io/npm/l/ng-keyboard-shortcuts" target="_blank" alt="MIT License">
+        <img src="https://img.shields.io/npm/l/ng-keyboard-shortcuts" />
       </a>
 </p>  
 
 An Angular module that provides a declarative API using components/directive to manage Keyboard shortcuts in scalable way.
 
-This documentation is for version **7.0.0+ (8,9) and any future versions**.  For older versions (**2.0.0/6.0.0**) please [click here](https://github.com/omridevk/iq-keyboard-shortcuts/tree/2.0.0)
+This documentation is for version **7.0.0+ (8,9) and any future versions**.  For older versions (**2.0.0/6.0.0**) please [click here](https://github.com/omridevk/ng-keyboard-shortcuts/tree/2.0.0)
 
 See demo here:  
 [demo](https://codesandbox.io/s/yvyovny43v)
@@ -37,8 +37,8 @@ Compatible with Angular 5+
   * [Combinations](#combinations)
   * [Sequences](#sequences)
   * [Components](#components)
-    * [Keyboardshortcuts](#iq-keyboard-shortcuts)
-    * [HelpScreen](#iq-keyboard-shortcuts-help)
+    * [Keyboardshortcuts](#ng-keyboard-shortcuts)
+    * [HelpScreen](#ng-keyboard-shortcuts-help)
   * [Directive](#directive)
     * [ngKeyboardShortcuts](#ngKeyboardShortcuts)
   * [Service](#service)
@@ -58,24 +58,24 @@ Compatible with Angular 5+
 # Install:
 ##### NPM
 ###### Angular latest
-```npm install --save iq-keyboard-shortcuts```
+```npm install --save ng-keyboard-shortcuts```
 ###### Angular 8/9
-```npm install --save iq-keyboard-shortcuts@^9.0.0```
+```npm install --save ng-keyboard-shortcuts@^9.0.0```
 ###### Angular 7
-```npm install --save iq-keyboard-shortcuts@^7.0.0```
+```npm install --save ng-keyboard-shortcuts@^7.0.0```
 
 ##### Yarn
 
 ###### Angular latest
-```yarn add iq-keyboard-shortcuts```
+```yarn add ng-keyboard-shortcuts```
 ###### Angular 8/9
-```npm add iq-keyboard-shortcuts@^9.0.0```
+```npm add ng-keyboard-shortcuts@^9.0.0```
 ###### Angular 7
-```yarn add iq-keyboard-shortcuts@^7.0.0```
+```yarn add ng-keyboard-shortcuts@^7.0.0```
 
 # Setup:
 ```typescript  
-import { KeyboardShortcutsModule }     from 'iq-keyboard-shortcuts';  
+import { KeyboardShortcutsModule }     from 'ng-keyboard-shortcuts';  
   
 @NgModule({  
     declarations: [  
@@ -162,7 +162,7 @@ Sequences can be used inside components or directives and are declared __without
 will require clicking, a, then b, then c.
 
 ## Components:
-### iq-keyboard-shortcuts
+### ng-keyboard-shortcuts
 Component that can be used across the app to bind to various shortcuts
 
 #### Inputs:
@@ -180,11 +180,11 @@ Component that can be used across the app to bind to various shortcuts
 ```typescript  
   
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";  
-import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "iq-keyboard-shortcuts";  
+import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "ng-keyboard-shortcuts";  
   
 @Component({  
     selector: 'demo-component',  
-    template: "<iq-keyboard-shortcuts [shortcuts]="shortcuts"></iq-keyboard-shortcuts>"  
+    template: "<ng-keyboard-shortcuts [shortcuts]="shortcuts"></ng-keyboard-shortcuts>"  
 })  
 export class DemoComponent implements AfterViewInit {  
   
@@ -238,7 +238,7 @@ export class DemoComponent implements AfterViewInit {
   
 }  
 ```  
-### iq-keyboard-shortcuts-help
+### ng-keyboard-shortcuts-help
 1. **Make sure to install `@angular/animations` ( `npm install --save @angular/animations` or `yarn add @angular/animations`**
 2. **Add BrowserAnimationsModule to your app.module imports**
 
@@ -292,7 +292,7 @@ export class AppComponent {
    <h1>  
       Welcome to {{ title }}!  
    </h1>  
-   <iq-keyboard-shortcuts-help [key]="'f1'" [closeKey]="'escape'" [title]="'Help'"></iq-keyboard-shortcuts-help>  
+   <ng-keyboard-shortcuts-help [key]="'f1'" [closeKey]="'escape'" [title]="'Help'"></ng-keyboard-shortcuts-help>  
 </div>  
   
 ```  
@@ -315,7 +315,7 @@ The shortcut then will only be active while the element is in __focus__.
 
 ```typescript  
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";  
-import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "iq-keyboard-shortcuts";  
+import { ShortcutInput, ShortcutEventOutput, KeyboardShortcutsComponent } from "ng-keyboard-shortcuts";  
   
 @Component({  
     selector: 'demo-component',  
@@ -345,7 +345,7 @@ export class DemoComponent implements AfterViewInit {
 # Service
 ## KeyboardShortcutsHelpService
 
-Singleton service that can be used to render a custom help screen. (used to build the [Built in help component](#iq-keyboard-shortcuts-help))  
+Singleton service that can be used to render a custom help screen. (used to build the [Built in help component](#ng-keyboard-shortcuts-help))  
 Provides access to all registered shortcuts in the app using Observable that updates on shortcuts changes.  
 Since shortcuts can be added or removed during the lifecycle of the app, an observable data structure needed to be used.
 
@@ -438,15 +438,15 @@ type = ShortcutEventOutput {
 
 
 # Building
-1. Run Project
+1. Ejecutar Proyecto
 ```npm run start```
-2. Generate library
+2. Generar libreria
 ```npm run build:lib```
 
 # Publishing
-1. ```npm publish dist/iq-keyboard-shortcuts```
-2. Create package locally
-```cd dist/libs/iq-keyboard-shortcuts```
+1. ```npm publish dist/ng-keyboard-shortcuts```
+2. Crear paquete de forma local
+```cd dist/libs/ng-keyboard-shortcuts```
 ```npm pack```
 
 # License

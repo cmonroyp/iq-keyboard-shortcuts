@@ -98,7 +98,7 @@ const enableScroll = () => {
  * it is shown as a modal
  */
 @Component({
-    selector: "iq-keyboard-shortcuts-help",
+    selector: "ng-keyboard-shortcuts-help",
     templateUrl: "./ng-keyboard-shortcuts-help.component.html",
     styleUrls: ["./ng-keyboard-shortcuts-help.component.scss"],
     animations: [

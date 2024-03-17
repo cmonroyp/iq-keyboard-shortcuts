@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-    displayName: "iq-keyboard-shortcuts",
+    displayName: "ng-keyboard-shortcuts",
     preset: "../../jest.preset.js",
     setupFilesAfterEnv: ["<rootDir>/src/test-setup.ts"],
     globals: {
@@ -9,7 +9,7 @@ export default {
             stringifyContentPathRegex: "\\.(html|svg)$"
         }
     },
-    coverageDirectory: "../../coverage/libs/iq-keyboard-shortcuts",
+    coverageDirectory: "../../coverage/libs/ng-keyboard-shortcuts",
     transform: {
         "^.+\\.(ts|mjs|js|html)$": "jest-preset-angular"
     },

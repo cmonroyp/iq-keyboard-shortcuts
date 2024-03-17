@@ -16,7 +16,7 @@ import { Observable } from "rxjs";
  * will remove registered shortcuts when element is removed from DOM.
  */
 @Component({
-    selector: "iq-keyboard-shortcuts",
+    selector: "ng-keyboard-shortcuts",
     template: ""
 })
 export class KeyboardShortcutsComponent implements OnChanges, OnDestroy {

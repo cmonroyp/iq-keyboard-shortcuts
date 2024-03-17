@@ -1,15 +1,15 @@
-import { Component, Input, OnInit } from "@angular/core";
-import { Shortcut } from "./ng-keyboard-shortcuts.interfaces";
-import { symbols } from "./keys";
-import { identity } from "./utils";
+import {Component, Input, OnInit} from '@angular/core';
+import {Shortcut} from './ng-keyboard-shortcuts.interfaces';
+import {symbols} from './keys';
+import {identity} from './utils';
 
 /**
  * @ignore
  */
 @Component({
-    selector: "iq-keyboard-shortcuts-help-item",
-    templateUrl: "./ng-keyboard-shortcuts-help-item.component.html",
-    styleUrls: ["./ng-keyboard-shortcuts-help-item.component.scss"]
+    selector: 'ng-keyboard-shortcuts-help-item',
+    templateUrl: './ng-keyboard-shortcuts-help-item.component.html',
+    styleUrls: ['./ng-keyboard-shortcuts-help-item.component.scss']
 })
 export class KeyboardShortcutsHelpItemComponent implements OnInit {
     public parsedKeys: string[][];
@@ -19,12 +19,12 @@ export class KeyboardShortcutsHelpItemComponent implements OnInit {
     @Input()
     set shortcut(shortcut: Shortcut) {
         const key = Array.isArray(shortcut.key) ? shortcut.key : [shortcut.key];
-        this.parsedKeys = key.map((key) =>
+        this.parsedKeys = key.map(key =>
             key
-                .split(" ")
+                .split(' ')
                 .filter(identity)
-                .filter((key) => key !== "+")
-                .map((key) => {
+                .filter(key => key !== '+')
+                .map(key => {
                     if (symbols[key]) {
                         return symbols[key];
                     }
@@ -40,7 +40,9 @@ export class KeyboardShortcutsHelpItemComponent implements OnInit {
 
     private _shortcut: Shortcut;
 
-    constructor() {}
+    constructor() {
+    }
 
-    ngOnInit() {}
+    ngOnInit() {
+    }
 }

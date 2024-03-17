@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {
     AllowIn,
     KeyboardShortcutsComponent,
     ShortcutDirectiveInput,
     ShortcutEventOutput,
     ShortcutInput
-} from "iq-keyboard-shortcuts";
+} from 'ng-keyboard-shortcuts';
 
 @Component({
     selector: "app-home",

@@ -3,9 +3,9 @@ import { MediaMatcher } from "@angular/cdk/layout";
 import {
     KeyboardShortcutsHelpService,
     KeyboardShortcutsSelectService
-} from "iq-keyboard-shortcuts";
+} from "ng-keyboard-shortcuts";
 @Component({
-    selector: "iq-keyboard-shortcuts-demo-app",
+    selector: "ng-keyboard-shortcuts-demo-app",
     templateUrl: "./app.component.html",
     styleUrls: ["./app.component.scss"]
 })

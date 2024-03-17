@@ -1,5 +1,5 @@
 /*
- * Public API Surface of iq-keyboard-shortcuts
+ * Public API Surface of ng-keyboard-shortcuts
  */
 
 export { KeyboardShortcutsModule } from "./lib/ng-keyboard-shortcuts.module";

@@ -19,8 +19,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "iq-keyboard-shortcuts": [
-        "libs/iq-keyboard-shortcuts/src/index.ts"
+      "ng-keyboard-shortcuts": [
+        "libs/ng-keyboard-shortcuts/src/index.ts"
       ]
     }
   },

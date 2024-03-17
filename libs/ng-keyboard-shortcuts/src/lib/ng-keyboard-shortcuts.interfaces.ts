@@ -2,6 +2,7 @@
  * The shortcut input for the Directive
  */
 export interface Shortcut {
+
     /**
      * A key or list of keys to listen to and fire the command.
      */
@@ -35,7 +36,7 @@ export interface Shortcut {
 }
 
 /**
- * The shortcut input type for iq-keyboard-shortcuts component
+ * The shortcut input type for ng-keyboard-shortcuts component
  */
 export interface ShortcutInput extends Shortcut {
     /**
@@ -51,9 +52,9 @@ export interface ShortcutInput extends Shortcut {
 }
 
 export enum AllowIn {
-    Textarea = "TEXTAREA",
-    Input = "INPUT",
-    Select = "SELECT",
+    Textarea = 'TEXTAREA',
+    Input = 'INPUT',
+    Select = 'SELECT',
     ContentEditable = "CONTENT-EDITABLE"
 }
 
